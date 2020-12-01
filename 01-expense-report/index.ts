@@ -3,6 +3,8 @@
   const normalizedInput = input.split('\n').map(Number)
 
   const expenseTuple = normalizedInput.reduce((potentialNumbers, currentNumber) => {
+    // Base case, If we already have our numbers we just keep going with it.
+    // Note: Reduce is not optimal here since it would be great to just break at this point
     if (potentialNumbers.length === 2) {
 
       const tupleSum = potentialNumbers[0] + potentialNumbers[1]
