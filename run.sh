@@ -1,1 +1,1 @@
-deno run --allow-read $1/index.ts 
+deno run --allow-read $1.ts 
